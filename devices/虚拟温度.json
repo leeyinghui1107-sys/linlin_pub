@@ -1,0 +1,234 @@
+{
+  "header": {
+    "magic": 1414480708,
+    "version": 1,
+    "flags": 0,
+    "created_at": 1779244964,
+    "data_size": 0,
+    "compressed_size": 0,
+    "checksum": 0,
+    "reserved": 0
+  },
+  "metadata": {
+    "schema_version": 1,
+    "min_compatible": 1,
+    "field_versions": {
+      "attribute.category": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.dict": {
+        "ver": 1
+      },
+      "attribute.extensions": {
+        "ver": 1
+      },
+      "attribute.formula": {
+        "ver": 1
+      },
+      "attribute.high": {
+        "ver": 1
+      },
+      "attribute.level": {
+        "ver": 1
+      },
+      "attribute.low": {
+        "ver": 1
+      },
+      "attribute.max": {
+        "ver": 1
+      },
+      "attribute.min": {
+        "ver": 1
+      },
+      "attribute.name": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.order": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.precision": {
+        "ver": 1
+      },
+      "attribute.save": {
+        "ver": 1
+      },
+      "attribute.status": {
+        "ver": 1
+      },
+      "attribute.unit": {
+        "ver": 1
+      },
+      "category": {
+        "ver": 1
+      },
+      "command.attributes": {
+        "ver": 1
+      },
+      "command.category": {
+        "ver": 1,
+        "req": true
+      },
+      "command.content": {
+        "ver": 1,
+        "req": true
+      },
+      "command.err_prefix": {
+        "ver": 1
+      },
+      "command.length": {
+        "ver": 1
+      },
+      "command.order": {
+        "ver": 1,
+        "req": true
+      },
+      "command.prefix": {
+        "ver": 1
+      },
+      "command.sample": {
+        "ver": 1
+      },
+      "command.suffix": {
+        "ver": 1
+      },
+      "commands": {
+        "ver": 1,
+        "req": true
+      },
+      "extensions": {
+        "ver": 1
+      },
+      "hardware_version": {
+        "ver": 1
+      },
+      "manufacturer": {
+        "ver": 1
+      },
+      "name": {
+        "ver": 1,
+        "req": true
+      },
+      "protocol": {
+        "ver": 1,
+        "req": true
+      },
+      "tags": {
+        "ver": 1
+      }
+    },
+    "pack_time": "2026-05-20T02:42:44.4953018Z"
+  },
+  "device_model": {
+    "name": "虚拟温湿度",
+    "manufacturer": "",
+    "protocol": 8,
+    "hardware_version": "",
+    "category": 68,
+    "extensions": "{\"model\":{\"device_type\":68,\"manufacturer\":\"\",\"model_name\":\"虚拟温湿度\",\"version\":\"\"}}",
+    "commands": [
+      {
+        "order": 1,
+        "content": "favg(p1,p2,p3)|680010101,680020101,680030101",
+        "category": 4,
+        "length": 0,
+        "prefix": 0,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "",
+        "attributes": [
+          {
+            "order": 1,
+            "name": "机房平均温度",
+            "alias": "机房平均温度",
+            "predefine_name": "机房温度(A)",
+            "tags": "机房温度",
+            "unit": "℃",
+            "formula": "",
+            "precision": 2,
+            "dict": "",
+            "category": 3,
+            "repeat": 1,
+            "max": 100,
+            "min": -30,
+            "high": 24,
+            "low": 20,
+            "level": 3,
+            "save": 60,
+            "status": 2,
+            "extensions": "{\"category\":3,\"low\":20,\"high\":24,\"mid\":22,\"step\":0.05,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":0}"
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "content": "favg(p1,p2,p3)|680010102,680020102,680030102",
+        "category": 4,
+        "length": 0,
+        "prefix": 0,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "",
+        "attributes": [
+          {
+            "order": 1,
+            "name": "机房平均湿度",
+            "alias": "机房平均湿度",
+            "predefine_name": "机房湿度(A)",
+            "tags": "机房湿度",
+            "unit": "%",
+            "formula": "",
+            "precision": 2,
+            "dict": "",
+            "category": 3,
+            "repeat": 1,
+            "max": 100,
+            "min": 0,
+            "high": 60,
+            "low": 40,
+            "level": 3,
+            "save": 60,
+            "status": 2,
+            "extensions": "{\"category\":3,\"low\":40,\"high\":60,\"mid\":50,\"step\":0.2,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":0}"
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "content": "favg(p1,p2,p3)|680010103,680020103,680030103",
+        "category": 4,
+        "length": 0,
+        "prefix": 0,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "",
+        "attributes": [
+          {
+            "order": 1,
+            "name": "机房平均烟雾",
+            "alias": "机房平均烟雾",
+            "predefine_name": "通用数值",
+            "tags": "机房烟雾",
+            "unit": "",
+            "formula": "",
+            "precision": 1,
+            "dict": "",
+            "category": 3,
+            "repeat": 1,
+            "max": 0,
+            "min": 0,
+            "high": 0,
+            "low": 0,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":3,\"low\":0,\"high\":10,\"mid\":3,\"step\":0.2,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":0}"
+          }
+        ]
+      }
+    ]
+  },
+  "signature": "12Tre35Gn1MaYQvVXgiD_gjcLbCtJdlNCXHamTS10_Y="
+}

@@ -1,0 +1,168 @@
+{
+  "header": {
+    "magic": 1414480708,
+    "version": 1,
+    "flags": 0,
+    "created_at": 1779248255,
+    "data_size": 0,
+    "compressed_size": 0,
+    "checksum": 0,
+    "reserved": 0
+  },
+  "metadata": {
+    "schema_version": 1,
+    "min_compatible": 1,
+    "field_versions": {
+      "attribute.category": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.dict": {
+        "ver": 1
+      },
+      "attribute.extensions": {
+        "ver": 1
+      },
+      "attribute.formula": {
+        "ver": 1
+      },
+      "attribute.high": {
+        "ver": 1
+      },
+      "attribute.level": {
+        "ver": 1
+      },
+      "attribute.low": {
+        "ver": 1
+      },
+      "attribute.max": {
+        "ver": 1
+      },
+      "attribute.min": {
+        "ver": 1
+      },
+      "attribute.name": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.order": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.precision": {
+        "ver": 1
+      },
+      "attribute.save": {
+        "ver": 1
+      },
+      "attribute.status": {
+        "ver": 1
+      },
+      "attribute.unit": {
+        "ver": 1
+      },
+      "category": {
+        "ver": 1
+      },
+      "command.attributes": {
+        "ver": 1
+      },
+      "command.category": {
+        "ver": 1,
+        "req": true
+      },
+      "command.content": {
+        "ver": 1,
+        "req": true
+      },
+      "command.err_prefix": {
+        "ver": 1
+      },
+      "command.length": {
+        "ver": 1
+      },
+      "command.order": {
+        "ver": 1,
+        "req": true
+      },
+      "command.prefix": {
+        "ver": 1
+      },
+      "command.sample": {
+        "ver": 1
+      },
+      "command.suffix": {
+        "ver": 1
+      },
+      "commands": {
+        "ver": 1,
+        "req": true
+      },
+      "extensions": {
+        "ver": 1
+      },
+      "hardware_version": {
+        "ver": 1
+      },
+      "manufacturer": {
+        "ver": 1
+      },
+      "name": {
+        "ver": 1,
+        "req": true
+      },
+      "protocol": {
+        "ver": 1,
+        "req": true
+      },
+      "tags": {
+        "ver": 1
+      }
+    },
+    "pack_time": "2026-05-20T03:37:35.4741213Z"
+  },
+  "device_model": {
+    "name": "ZT",
+    "manufacturer": "ZT",
+    "protocol": 1,
+    "hardware_version": "",
+    "category": 81,
+    "extensions": "{\"model\":{\"device_type\":81,\"manufacturer\":\"ZT\",\"model_name\":\"ZT\",\"version\":\"\"}}",
+    "commands": [
+      {
+        "order": 1,
+        "content": "010300000001840A",
+        "category": 1,
+        "length": 7,
+        "prefix": 84,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "0103020000B844",
+        "attributes": [
+          {
+            "order": 1,
+            "name": "消防状态",
+            "alias": "消防状态",
+            "predefine_name": "壹状态告警",
+            "tags": "消防状态",
+            "unit": "",
+            "formula": "hx(3)",
+            "precision": 0,
+            "dict": "{\"0\":\"正常\",\"1\":\"告警\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 1,
+            "min": 0,
+            "high": 0.5,
+            "low": 0,
+            "level": 3,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":1,\"mid\":0,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          }
+        ]
+      }
+    ]
+  },
+  "signature": "vxnVziDacek1D8rvpeRR-GqpxCXhduO_IHFwZJd5Dsc="
+}

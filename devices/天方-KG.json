@@ -1,0 +1,468 @@
+{
+  "header": {
+    "magic": 1414480708,
+    "version": 1,
+    "flags": 0,
+    "created_at": 1779244793,
+    "data_size": 0,
+    "compressed_size": 0,
+    "checksum": 0,
+    "reserved": 0
+  },
+  "metadata": {
+    "schema_version": 1,
+    "min_compatible": 1,
+    "field_versions": {
+      "attribute.category": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.dict": {
+        "ver": 1
+      },
+      "attribute.extensions": {
+        "ver": 1
+      },
+      "attribute.formula": {
+        "ver": 1
+      },
+      "attribute.high": {
+        "ver": 1
+      },
+      "attribute.level": {
+        "ver": 1
+      },
+      "attribute.low": {
+        "ver": 1
+      },
+      "attribute.max": {
+        "ver": 1
+      },
+      "attribute.min": {
+        "ver": 1
+      },
+      "attribute.name": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.order": {
+        "ver": 1,
+        "req": true
+      },
+      "attribute.precision": {
+        "ver": 1
+      },
+      "attribute.save": {
+        "ver": 1
+      },
+      "attribute.status": {
+        "ver": 1
+      },
+      "attribute.unit": {
+        "ver": 1
+      },
+      "category": {
+        "ver": 1
+      },
+      "command.attributes": {
+        "ver": 1
+      },
+      "command.category": {
+        "ver": 1,
+        "req": true
+      },
+      "command.content": {
+        "ver": 1,
+        "req": true
+      },
+      "command.err_prefix": {
+        "ver": 1
+      },
+      "command.length": {
+        "ver": 1
+      },
+      "command.order": {
+        "ver": 1,
+        "req": true
+      },
+      "command.prefix": {
+        "ver": 1
+      },
+      "command.sample": {
+        "ver": 1
+      },
+      "command.suffix": {
+        "ver": 1
+      },
+      "commands": {
+        "ver": 1,
+        "req": true
+      },
+      "extensions": {
+        "ver": 1
+      },
+      "hardware_version": {
+        "ver": 1
+      },
+      "manufacturer": {
+        "ver": 1
+      },
+      "name": {
+        "ver": 1,
+        "req": true
+      },
+      "protocol": {
+        "ver": 1,
+        "req": true
+      },
+      "tags": {
+        "ver": 1
+      }
+    },
+    "pack_time": "2026-05-20T02:39:53.2901094Z"
+  },
+  "device_model": {
+    "name": "KG",
+    "manufacturer": "天方",
+    "protocol": 1,
+    "hardware_version": "",
+    "category": 33,
+    "extensions": "{\"model\":{\"device_type\":33,\"manufacturer\":\"天方\",\"model_name\":\"KG\",\"version\":\"\"}}",
+    "commands": [
+      {
+        "order": 1,
+        "content": "010100000001FDCA",
+        "category": 1,
+        "length": 6,
+        "prefix": 2,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "010101019048",
+        "attributes": [
+          {
+            "order": 1,
+            "name": "新风机开机状态",
+            "alias": "新风机开机状态",
+            "predefine_name": "通用字典",
+            "tags": "新风机开机状态",
+            "unit": "",
+            "formula": "hx(3,1)",
+            "precision": 0,
+            "dict": "{\"0\":\"关机\",\"1\":\"开机\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 0,
+            "min": 0,
+            "high": 0,
+            "low": 0,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":1,\"mid\":1,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "content": "01030000000305CB",
+        "category": 1,
+        "length": 11,
+        "prefix": 2,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "0103060002008100DC0904",
+        "attributes": [
+          {
+            "order": 2,
+            "name": "新风机设定模式",
+            "alias": "新风机设定模式",
+            "predefine_name": "通用字典",
+            "tags": "新风机设定模式",
+            "unit": "",
+            "formula": "hx(4,1)",
+            "precision": 0,
+            "dict": "{\"17\":\"制冷\",\"8\":\"制热\",\"2\":\"未定义\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 0,
+            "min": 0,
+            "high": 0,
+            "low": 0,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":100,\"mid\":2,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          },
+          {
+            "order": 3,
+            "name": "新风机送风模式",
+            "alias": "新风机送风模式",
+            "predefine_name": "通用字典",
+            "tags": "新风机送风模式",
+            "unit": "",
+            "formula": "hx(6,1)",
+            "precision": 0,
+            "dict": "{\"129\":\"自动\",\"130\":\"低风\",\"132\":\"中风\",\"136\":\"高风\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 0,
+            "min": 0,
+            "high": 0,
+            "low": 0,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":255,\"mid\":129,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          },
+          {
+            "order": 4,
+            "name": "设定温度",
+            "alias": "设定温度",
+            "predefine_name": "机房温度(B)",
+            "tags": "设定温度",
+            "unit": "℃",
+            "formula": "hx(7)",
+            "precision": 1,
+            "dict": "",
+            "category": 3,
+            "repeat": 3,
+            "max": 100,
+            "min": -30,
+            "high": 27,
+            "low": 18,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":3,\"low\":0,\"high\":100,\"mid\":22,\"step\":0,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "content": "01030003000575C9",
+        "category": 1,
+        "length": 15,
+        "prefix": 2,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "01030A012200FA8000800001721868,01030A01220104800080000172C66B",
+        "attributes": [
+          {
+            "order": 5,
+            "name": "新风机温度1",
+            "alias": "新风机温度1",
+            "predefine_name": "环境温度",
+            "tags": "新风机温度",
+            "unit": "℃",
+            "formula": "hx(3)",
+            "precision": 1,
+            "dict": "",
+            "category": 3,
+            "repeat": 3,
+            "max": 100,
+            "min": -30,
+            "high": 40,
+            "low": -20,
+            "level": 3,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":3,\"low\":18,\"high\":27,\"mid\":22,\"step\":0.3,\"normal_count\":600,\"alarm_count\":200,\"alarm_type\":2}"
+          },
+          {
+            "order": 6,
+            "name": "新风机温度2",
+            "alias": "新风机温度2",
+            "predefine_name": "环境温度",
+            "tags": "新风机温度",
+            "unit": "℃",
+            "formula": "hx(5)",
+            "precision": 1,
+            "dict": "",
+            "category": 3,
+            "repeat": 3,
+            "max": 100,
+            "min": -30,
+            "high": 40,
+            "low": -20,
+            "level": 3,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":3,\"low\":18,\"high\":27,\"mid\":22,\"step\":0.3,\"normal_count\":600,\"alarm_count\":200,\"alarm_type\":2}"
+          },
+          {
+            "order": 7,
+            "name": "新风机温度3",
+            "alias": "新风机温度3",
+            "predefine_name": "环境温度",
+            "tags": "新风机温度",
+            "unit": "℃",
+            "formula": "hx(11)",
+            "precision": 1,
+            "dict": "",
+            "category": 3,
+            "repeat": 3,
+            "max": 100,
+            "min": -30,
+            "high": 40,
+            "low": -20,
+            "level": 3,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":3,\"low\":18,\"high\":27,\"mid\":22,\"step\":0.3,\"normal_count\":600,\"alarm_count\":200,\"alarm_type\":2}"
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "content": "0101001000403C3F",
+        "category": 1,
+        "length": 13,
+        "prefix": 2,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "0101080000000000000000341D",
+        "attributes": [
+          {
+            "order": 8,
+            "name": "故障1",
+            "alias": "故障1",
+            "predefine_name": "壹状态告警",
+            "tags": "",
+            "unit": "",
+            "formula": "hb(3,7)",
+            "precision": 0,
+            "dict": "{\"0\":\"正常\",\"1\":\"故障\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 1,
+            "min": 0,
+            "high": 0.5,
+            "low": 0,
+            "level": 3,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":1,\"mid\":0,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          },
+          {
+            "order": 9,
+            "name": "故障2",
+            "alias": "故障2",
+            "predefine_name": "壹状态告警",
+            "tags": "壹状态告警",
+            "unit": "",
+            "formula": "hb(3,6)",
+            "precision": 0,
+            "dict": "{\"0\":\"正常\",\"1\":\"故障\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 1,
+            "min": 0,
+            "high": 0.5,
+            "low": 0,
+            "level": 3,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":1,\"mid\":0,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          }
+        ]
+      },
+      {
+        "order": 5,
+        "content": "010100080008BC0E",
+        "category": 1,
+        "length": 6,
+        "prefix": 2,
+        "suffix": 0,
+        "err_prefix": 0,
+        "sample": "010101005188",
+        "attributes": [
+          {
+            "order": 10,
+            "name": "压缩机状态",
+            "alias": "压缩机状态",
+            "predefine_name": "通用字典",
+            "tags": "压缩机状态",
+            "unit": "",
+            "formula": "hb(3,0)",
+            "precision": 0,
+            "dict": "{\"0\":\"关闭\",\"1\":\"开启\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 0,
+            "min": 0,
+            "high": 0,
+            "low": 0,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":1,\"mid\":0,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          },
+          {
+            "order": 11,
+            "name": "电加热状态",
+            "alias": "电加热状态",
+            "predefine_name": "通用字典",
+            "tags": "电加热状态",
+            "unit": "",
+            "formula": "hb(3,1)",
+            "precision": 0,
+            "dict": "{\"0\":\"关闭\",\"1\":\"开启\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 0,
+            "min": 0,
+            "high": 0,
+            "low": 0,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":1,\"mid\":0,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          },
+          {
+            "order": 12,
+            "name": "外风机状态",
+            "alias": "外风机状态",
+            "predefine_name": "通用字典",
+            "tags": "外风机状态",
+            "unit": "",
+            "formula": "hb(3,2)",
+            "precision": 0,
+            "dict": "{\"0\":\"关闭\",\"1\":\"开启\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 0,
+            "min": 0,
+            "high": 0,
+            "low": 0,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":1,\"mid\":0,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          },
+          {
+            "order": 13,
+            "name": "四通阀状态",
+            "alias": "四通阀状态",
+            "predefine_name": "通用字典",
+            "tags": "四通阀状态",
+            "unit": "",
+            "formula": "hb(3,3)",
+            "precision": 0,
+            "dict": "{\"0\":\"关闭\",\"1\":\"开启\"}",
+            "category": 1,
+            "repeat": 3,
+            "max": 0,
+            "min": 0,
+            "high": 0,
+            "low": 0,
+            "level": 1,
+            "save": 3600,
+            "status": 2,
+            "extensions": "{\"category\":1,\"low\":0,\"high\":1,\"mid\":0,\"step\":1,\"normal_count\":0,\"alarm_count\":0,\"alarm_type\":5}"
+          }
+        ]
+      }
+    ]
+  },
+  "signature": "JmygUdD7ugEetD6b7EALteFVjpt_85Hy4GImdxXuj6Q="
+}
