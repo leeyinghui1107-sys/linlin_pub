@@ -33,6 +33,7 @@
 ## 演示与下载
 
 - 官方网站：[https://www.pagent.cn/](https://www.pagent.cn/)
+- 使用文档：[https://www.pagent.cn/docs.html](https://www.pagent.cn/docs.html)
 - 在线演示：[https://mini.pagent.cn](https://mini.pagent.cn)
 - 演示账号：`admin`
 - 演示密码：`123456`
